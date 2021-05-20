@@ -81,7 +81,9 @@ const Projects = () => {
           >
             <FaGithub size="30"/>
           </button>
-          <button className="explore"><FaExternalLinkAlt size="30"/></button>
+          <button className="explore" onClick={() =>
+              window.open("https://drive.google.com/file/d/1Gyd5MV14ZqTiMYYXRucfVlmWimlqBw1q/view")
+            }><FaExternalLinkAlt size="30"/></button>
           <button
             onClick={() =>
               window.open("https://sidhant1593.medium.com/project-2-nykaa-clone-c982680bd38c")
@@ -103,7 +105,7 @@ const Projects = () => {
   const openProjectOutdoors = () => {
     const content = (
       <div className="popup-box">
-        <h2>PROJECT-3</h2>
+        <h2>PROJECT-4</h2>
         <img src={travel1} alt="travel1" className="portfolio-image-popupbox" />
         <p>LOOM CLONE</p>
         <div className="link-button">
@@ -134,7 +136,7 @@ const Projects = () => {
   const openProjectMusicPlayer = () => {
     const content = (
       <div className="popup-box">
-        <h2>PROJECT-4</h2>
+        <h2>PROJECT-3</h2>
         <img src={musicplayer} alt="musicplayer" className="portfolio-image-popupbox" />
         <p>REACT MUSIC PLAYER</p>
         <div className="link-button">
