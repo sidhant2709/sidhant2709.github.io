@@ -1,16 +1,19 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import p1 from "../Images/Projects Images/p1.jpg";
 import aljazeera from "../Images/Projects Images/aljazeera.png";
 import nykaa from "../Images/Projects Images/nykaa.png";
-import loom from "../Images/Projects Images/loom.png";
-import p4 from "../Images/Projects Images/p4.jpg";
+import musicplayer from "../Images/Projects Images/musicplayer.png";
+import travel1 from "../Images/Projects Images/travel.png";
+
 import cssIcon from "../Images/Icon Images/css.svg";
 import jsIcon from "../Images/Icon Images/js.svg";
 import reactIcon from "../Images/Icon Images/react.svg";
 import htmlIcon from "../Images/Icon Images/html.svg";
-import { FaGithub,FaMedium,FaLink,FaExternalLinkAlt} from "react-icons/fa";
+import sassIcon from "../Images/Icon Images/sass.svg";
+import reduxIcon from "../Images/Icon Images/redux.svg";
+
+
+
+import { FaGithub,FaMedium,FaExternalLinkAlt} from "react-icons/fa";
 
 
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
@@ -57,6 +60,7 @@ const Projects = () => {
           <img src={jsIcon} alt="cssIcon" className="tech-icon" />
           <img src={htmlIcon} alt="cssIcon" className="tech-icon" />
           <img src={reactIcon} alt="cssIcon" className="tech-icon" />
+          <img src={reduxIcon} alt="cssIcon" className="tech-icon" />
         </div>
       </div>
     );
@@ -96,62 +100,55 @@ const Projects = () => {
     PopupboxManager.open({ content });
   };
 
-  const openProjectLoom = () => {
+  const openProjectOutdoors = () => {
     const content = (
       <div className="popup-box">
         <h2>PROJECT-3</h2>
-        <img src={loom} alt="loom" className="portfolio-image-popupbox" />
+        <img src={travel1} alt="travel1" className="portfolio-image-popupbox" />
         <p>LOOM CLONE</p>
         <div className="link-button">
           <button
-            onClick={() => window.open("https://github.com/aman73650/Bromine")}
+            onClick={() => window.open("https://github.com/sidhant2709/html-css-travel-website")}
             className="github"
           >
             <FaGithub size="30"/>
           </button>
-          <button className="explore"><FaExternalLinkAlt size="30"/></button>
-          <button
+          <button className="explore"
             onClick={() =>
-              window.open("https://sidhant1593.medium.com/project-1-loom-clone-abf47a30583d")
+              window.open("https://sidhant2709.github.io/html-css-travel-website/")
             }
-            className="medium"
-          ><FaMedium size="30"/></button>
+          ><FaExternalLinkAlt size="30"/></button>
+          <button className="medium"><FaMedium size="30"/></button>
         </div>
         <h3>Technologies used</h3>
         <div className="technology-used">
           <img src={cssIcon} alt="cssIcon" className="tech-icon" />
-          <img src={jsIcon} alt="cssIcon" className="tech-icon" />
+          <img src={sassIcon} alt="cssIcon" className="tech-icon" />
           <img src={htmlIcon} alt="cssIcon" className="tech-icon" />
         </div>
       </div>
     );
     PopupboxManager.open({ content });
   };
-  const openP4 = () => {
+
+  const openProjectMusicPlayer = () => {
     const content = (
       <div className="popup-box">
-        <img src={p1} alt="p1" className="portfolio-image-popupbox" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          molestiae temporibus deserunt eius autem corporis eveniet consequatur,
-          mollitia accusantium quam quos omnis nulla quas impedit.
-        </p>
+        <h2>PROJECT-4</h2>
+        <img src={musicplayer} alt="musicplayer" className="portfolio-image-popupbox" />
+        <p>REACT MUSIC PLAYER</p>
         <div className="link-button">
           <button
-            onClick={() =>
-              window.open("https://github.com/divy25/lithiumProject")
-            }
+            onClick={() => window.open("https://github.com/sidhant2709/react-music-player")}
             className="github"
           >
-            GitHub Link
+            <FaGithub size="30"/>
           </button>
-          <button className="demo">EXPLORE</button>
-          <button
-            onClick={() =>
-              window.open("https://sidhant1593.medium.com/project-1-loom-clone-abf47a30583d")
+          <button onClick={() =>
+              window.open("https://sid-react-music-player.netlify.app/")
             }
-            className="github"
-          >Blog Link</button>
+            className="explore"><FaExternalLinkAlt size="30"/></button>
+          <button className="medium"><FaMedium size="30"/></button>
         </div>
         <h3>Technologies used</h3>
         <div className="technology-used">
@@ -164,10 +161,12 @@ const Projects = () => {
     );
     PopupboxManager.open({ content });
   };
+
+
   return (
     <div id="projects" className="portfolio-wrapper">
       <h1 className="text-uppercase text-center heading">Projects</h1>
-      <div className="container-fluid">
+      <div className="container-fliud">
         <div className="image-box-wrapper row justify-content-center">
 
 
@@ -185,22 +184,20 @@ const Projects = () => {
           </div>
 
           {/* ====================================================================================================== */}
-
-          <div className="portfolio-image-box" onClick={openProjectLoom}>
-          <h2>Loom Clone</h2>
-            <img src={loom} className="portfolio-image" alt="loom" />
+          <div className="portfolio-image-box" onClick={openProjectMusicPlayer}>
+              <h2>Music Player</h2>
+              <img src={musicplayer} className="portfolio-image" alt="musicplayer" />
           </div>
 
           {/* ====================================================================================================== */}
+          
 
-          {/* <div className="portfolio-image-box" onClick={openP4}>
-            <img src={p4} className="portfolio-image" alt="p4" />
-            <div className="overflow"></div>
-          </div> */}
+          <div className="portfolio-image-box" onClick={openProjectOutdoors}>
+            <h2>Outdoors-A Travel Website</h2>
+            <img src={travel1} className="portfolio-image" alt="travel1" />
+          </div>
 
-
-
-        </div>
+          </div>          
       </div>
       <PopupboxContainer />
     </div>
