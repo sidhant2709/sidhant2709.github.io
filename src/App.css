@@ -19,12 +19,11 @@
 }
 
 button {
- background: none;
+  background: none;
 }
 
 body {
-  font-family: 'Antonio',
-    sans-serif !important;
+  font-family: "Antonio", sans-serif !important;
   letter-spacing: 2px;
   background-color: #000000;
   background-image: linear-gradient(315deg, #03011b 0%, #000000 74%);
@@ -44,8 +43,7 @@ nav {
 }
 
 .logo {
-  font-family: 'Pattaya',
-    sans-serif !important;
+  font-family: "Pattaya", sans-serif !important;
   font-size: 1.8rem;
   padding-top: 1rem;
   background-clip: text;
@@ -56,7 +54,7 @@ nav {
 
 /*----- MENU LINKS --------*/
 nav a.nav-link {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -65,7 +63,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
@@ -78,7 +76,7 @@ nav ul li {
   /* height: 6rem !important; */
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .logo {
     font-size: 1.5rem;
     padding-top: 1rem;
@@ -89,12 +87,12 @@ nav ul li {
   }
 }
 
-.navbar-nav>li>a.active,
-.navbar-nav>li>a:focus {
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:focus {
   border-top: 0.1875rem solid #f9ab00;
 }
 
-.navbar-nav>li>a:hover {
+.navbar-nav > li > a:hover {
   border-top: 0.1875rem solid #f9ab00;
 }
 
@@ -103,7 +101,7 @@ nav ul li {
 .header-wrapper {
   position: relative;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./Images/pexels-danny-meneses-943096.jpg');
+    url("./Images/pexels-danny-meneses-943096.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,7 +134,7 @@ nav ul li {
   color: #fff;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .main-info h1 {
     font-size: 1.5rem !important;
   }
@@ -147,7 +145,7 @@ nav ul li {
 }
 
 .btn-main-offer {
-  background: #343A40;
+  background: #343a40;
   text-transform: uppercase;
   border-radius: 1rem;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
@@ -213,7 +211,7 @@ nav ul li {
 
 .quote p {
   text-align: justify;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: #00aaf9;
 }
 
@@ -223,7 +221,7 @@ nav ul li {
   bottom: 0;
   right: 0;
   transform: translateY(400%);
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: #00f915;
 }
 
@@ -235,7 +233,6 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .profile-img {
@@ -246,7 +243,6 @@ nav ul li {
   border: 0px solid #f9ab00;
 }
 
-
 .my-name {
   color: #f9ab00;
   font-size: 2rem;
@@ -254,7 +250,7 @@ nav ul li {
 
 .about-paragraph {
   margin-top: 1rem;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 1.5rem;
   text-align: justify;
   line-height: 2rem;
@@ -266,15 +262,14 @@ nav ul li {
   color: burlywood;
 }
 
-@media(max-width:375px) {
+@media (max-width: 375px) {
   .profile-img {
     width: 10rem;
     height: 10rem;
   }
 }
 
-
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .about-me {
     height: auto;
     padding-top: 0rem;
@@ -287,7 +282,7 @@ nav ul li {
   }
 }
 
-@media(width:768px) {
+@media (width: 768px) {
   .about-me {
     height: 60vh;
     padding-top: 0rem;
@@ -299,13 +294,11 @@ nav ul li {
   }
 }
 
-@media(width:1024px) {
+@media (width: 1024px) {
   .about-me {
     height: auto;
   }
 }
-
-
 
 /* ============================experiences============================== */
 .experiences {
@@ -314,7 +307,7 @@ nav ul li {
   padding: 2rem 1rem;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .experiences {
     border: 0px solid white;
     height: auto;
@@ -378,7 +371,7 @@ nav ul li {
 .timeline-content {
   width: 95%;
   padding: 0 0.9375rem;
-  color: #343A40;
+  color: #343a40;
   direction: ltr;
 }
 
@@ -389,13 +382,11 @@ nav ul li {
   border: 0px solid whitesmoke;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .timeline-block-left .timeline-content {
     text-align: end;
   }
-  
 }
-
 
 .timeline-content p {
   color: chocolate;
@@ -406,7 +397,7 @@ nav ul li {
   color: yellowgreen;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .experiences .container {
     padding-left: 0;
   }
@@ -426,12 +417,10 @@ nav ul li {
     direction: ltr;
     width: 100%;
   }
-  
-
 }
 
 .role {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: #87a2f8;
   font-size: 1.5rem;
 }
@@ -457,11 +446,11 @@ nav ul li {
   justify-content: space-around;
   cursor: pointer;
   background: transparent;
-  box-shadow: 0 8px 32px 0 rgba(#130f40 ,0.37);
+  box-shadow: 0 8px 32px 0 rgba(#130f40, 0.37);
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
   border-radius: 10px;
-  border: .2px solid rgba(110, 110, 110, 0.18);
+  border: 0.2px solid rgba(110, 110, 110, 0.18);
 }
 
 .portfolio-image-box h2 {
@@ -478,14 +467,14 @@ nav ul li {
   padding: 0 0.5rem;
 }
 
-@media(min-width:1440px) {
+@media (min-width: 1440px) {
   .portfolio-image {
     width: 90%;
     border: 0px solid #f9ab00;
     padding: 0 0rem;
     margin-bottom: 1rem;
   }
-  .portfolio-image-box{
+  .portfolio-image-box {
     width: 30%;
   }
 
@@ -497,19 +486,16 @@ nav ul li {
   }
 }
 
-
-
-
-
-
-
-
-
 /* =======================================POPUP BOX=================================== */
 
 .popupbox-wrapper {
   margin-top: 0rem;
-  background: linear-gradient(to bottom, rgba(71, 70, 70, 0.9), rgba(58, 57, 57, 0.9)), url("./Images/pexels-fauxels-3183150.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(71, 70, 70, 0.9),
+      rgba(58, 57, 57, 0.9)
+    ),
+    url("./Images/pexels-fauxels-3183150.jpg");
   border: 0px solid white;
   width: 25%;
 }
@@ -571,13 +557,13 @@ nav ul li {
   height: 80px;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
   }
 }
 
-@media(max-height: 812px) {
+@media (max-height: 812px) {
   .popupbox-wrapper {
     height: 400px;
     border: 0px solid white;
@@ -605,7 +591,7 @@ nav ul li {
   }
 }
 
-@media(height: 568px) {
+@media (height: 568px) {
   .popupbox-wrapper {
     height: 400px;
     border: 0px solid white;
@@ -635,7 +621,7 @@ nav ul li {
   }
 }
 
-@media(max-height: 280px) {
+@media (max-height: 280px) {
   .popupbox-wrapper {
     height: 90%;
     border: 0px solid rgb(201, 9, 9);
@@ -643,11 +629,10 @@ nav ul li {
 
   .portfolio-image-popupbox {
     width: 30%;
-
   }
 }
 
-@media only screen and (min-width: 1200px) and (min-height:667px) {
+@media only screen and (min-width: 1200px) and (min-height: 667px) {
   .popupbox-wrapper {
     margin-top: 4rem;
     border: 0px solid white;
@@ -694,7 +679,7 @@ nav ul li {
   height: auto;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .technologies {
     height: auto;
     border: 0px solid white;
@@ -720,7 +705,6 @@ nav ul li {
   background: rgba(19, 28, 39, 0.9);
   padding-top: 1rem;
   border-radius: 1rem;
-
 }
 
 .myCarousel {
@@ -732,7 +716,7 @@ nav ul li {
   padding: 0 0 8% 0;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .myCarousel {
     min-height: 10rem;
     padding: 0;
@@ -875,8 +859,8 @@ nav ul li {
   top: -2.2rem;
 }
 
-input:focus+.line,
-textarea:focus+.line {
+input:focus + .line,
+textarea:focus + .line {
   width: 100%;
   transition: width 0.5s ease-in-out;
 }
@@ -900,8 +884,7 @@ textarea .form-control {
   margin-bottom: 1.5rem;
 }
 
-@media(max-width:768px) {
-
+@media (max-width: 768px) {
   .contacts {
     padding: 1rem;
     height: auto;
@@ -1006,8 +989,6 @@ textarea .form-control {
 
 /* ===================================================================== */
 
-
-
 /* =================================================================================================================== */
 .tech-stacks {
   height: auto;
@@ -1030,10 +1011,9 @@ textarea .form-control {
   border: 0px solid black;
   width: 5rem;
   height: 5rem;
-
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .tech-stacks {
     height: auto;
     padding: 3rem;
@@ -1051,7 +1031,7 @@ textarea .form-control {
   }
 }
 
-@media(height:653px) {
+@media (height: 653px) {
   .avatar {
     width: 5rem;
   }
