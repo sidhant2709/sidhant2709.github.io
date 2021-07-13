@@ -145,7 +145,8 @@ nav ul li {
 }
 
 .btn-main-offer {
-  background: #343a40;
+  
+  background-color: red;
   text-transform: uppercase;
   border-radius: 1rem;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
@@ -172,7 +173,7 @@ nav ul li {
 
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: red;
+  background: #343a40;
   color: white;
   transition: 0.2s ease-in-out;
 }
