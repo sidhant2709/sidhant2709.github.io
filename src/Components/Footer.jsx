@@ -18,7 +18,7 @@ const Footer = () => {
                         <div className="d-flex">
                             <FaLocationArrow style={{color: "white", fontSize: "1rem",marginTop:"1rem",marginRight:"1rem"}}/>
                             <p style={{ color: "white", fontSize: "1rem" }}>Matru Nilaya,Plot-No.-1439-1440,<br />
-                                New Forest Park,Bhubaneswar,<br/>Odisha,India<br/>PIN-75100p
+                                New Forest Park,Bhubaneswar,<br/>Odisha,India<br/>PIN-751009
                             </p>
                         </div>
                         <div className="d-flex">

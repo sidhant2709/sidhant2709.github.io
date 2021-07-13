@@ -11,10 +11,7 @@ import htmlIcon from "../Images/Icon Images/html.svg";
 import sassIcon from "../Images/Icon Images/sass.svg";
 import reduxIcon from "../Images/Icon Images/redux.svg";
 
-
-
-import { FaGithub,FaMedium,FaExternalLinkAlt} from "react-icons/fa";
-
+import { FaGithub, FaMedium, FaExternalLinkAlt } from "react-icons/fa";
 
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
@@ -41,18 +38,28 @@ const Projects = () => {
             }
             className="github"
           >
-          <FaGithub size="30"/></button>
-          <button onClick={() =>
+            <FaGithub size="30" />
+          </button>
+          <button
+            onClick={() =>
               window.open(
                 "https://60601aa669e55d6d22f1cce0--aljajeera-clone.netlify.app/"
               )
-            } className="explore"><FaExternalLinkAlt size="30"/></button>
+            }
+            className="explore"
+          >
+            <FaExternalLinkAlt size="30" />
+          </button>
           <button
             onClick={() =>
-              window.open("https://sidhant1593.medium.com/project-3-aljazeera-clone-ab2dc92e425f")
+              window.open(
+                "https://sidhant1593.medium.com/project-3-aljazeera-clone-ab2dc92e425f"
+              )
             }
             className="medium"
-          ><FaMedium size="30"/></button>
+          >
+            <FaMedium size="30" />
+          </button>
         </div>
         <h3>Technologies used</h3>
         <div className="technology-used">
@@ -79,17 +86,24 @@ const Projects = () => {
             }
             className="github"
           >
-            <FaGithub size="30"/>
+            <FaGithub size="30" />
           </button>
-          <button className="explore" onClick={() =>
-              window.open("https://drive.google.com/file/d/1Gyd5MV14ZqTiMYYXRucfVlmWimlqBw1q/view")
-            }><FaExternalLinkAlt size="30"/></button>
+          <button
+            className="explore"
+            onClick={() => window.open("https://nykaa-clone.vercel.app/")}
+          >
+            <FaExternalLinkAlt size="30" />
+          </button>
           <button
             onClick={() =>
-              window.open("https://sidhant1593.medium.com/project-2-nykaa-clone-c982680bd38c")
+              window.open(
+                "https://sidhant1593.medium.com/project-2-nykaa-clone-c982680bd38c"
+              )
             }
             className="medium"
-          ><FaMedium size="30"/></button>
+          >
+            <FaMedium size="30" />
+          </button>
         </div>
         <h3>Technologies used</h3>
         <div className="technology-used">
@@ -110,17 +124,28 @@ const Projects = () => {
         <p>LOOM CLONE</p>
         <div className="link-button">
           <button
-            onClick={() => window.open("https://github.com/sidhant2709/html-css-travel-website")}
+            onClick={() =>
+              window.open(
+                "https://github.com/sidhant2709/html-css-travel-website"
+              )
+            }
             className="github"
           >
-            <FaGithub size="30"/>
+            <FaGithub size="30" />
           </button>
-          <button className="explore"
+          <button
+            className="explore"
             onClick={() =>
-              window.open("https://sidhant2709.github.io/html-css-travel-website/")
+              window.open(
+                "https://sidhant2709.github.io/html-css-travel-website/"
+              )
             }
-          ><FaExternalLinkAlt size="30"/></button>
-          <button className="medium"><FaMedium size="30"/></button>
+          >
+            <FaExternalLinkAlt size="30" />
+          </button>
+          <button className="medium">
+            <FaMedium size="30" />
+          </button>
         </div>
         <h3>Technologies used</h3>
         <div className="technology-used">
@@ -137,20 +162,32 @@ const Projects = () => {
     const content = (
       <div className="popup-box">
         <h2>PROJECT-3</h2>
-        <img src={musicplayer} alt="musicplayer" className="portfolio-image-popupbox" />
+        <img
+          src={musicplayer}
+          alt="musicplayer"
+          className="portfolio-image-popupbox"
+        />
         <p>REACT MUSIC PLAYER</p>
         <div className="link-button">
           <button
-            onClick={() => window.open("https://github.com/sidhant2709/react-music-player")}
+            onClick={() =>
+              window.open("https://github.com/sidhant2709/react-music-player")
+            }
             className="github"
           >
-            <FaGithub size="30"/>
+            <FaGithub size="30" />
           </button>
-          <button onClick={() =>
+          <button
+            onClick={() =>
               window.open("https://sid-react-music-player.netlify.app/")
             }
-            className="explore"><FaExternalLinkAlt size="30"/></button>
-          <button className="medium"><FaMedium size="30"/></button>
+            className="explore"
+          >
+            <FaExternalLinkAlt size="30" />
+          </button>
+          <button className="medium">
+            <FaMedium size="30" />
+          </button>
         </div>
         <h3>Technologies used</h3>
         <div className="technology-used">
@@ -165,15 +202,11 @@ const Projects = () => {
     PopupboxManager.open({ content });
   };
 
-
   return (
     <div id="projects" className="portfolio-wrapper">
       <h1 className="text-uppercase text-center heading">Projects</h1>
       <div className="container-fliud">
         <div className="image-box-wrapper row justify-content-center">
-
-
-
           <div className="portfolio-image-box" onClick={openProjectAlzajeera}>
             <h2>Al Jazeera Clone</h2>
             <img src={aljazeera} className="portfolio-image" alt="p1" />
@@ -188,19 +221,21 @@ const Projects = () => {
 
           {/* ====================================================================================================== */}
           <div className="portfolio-image-box" onClick={openProjectMusicPlayer}>
-              <h2>Music Player</h2>
-              <img src={musicplayer} className="portfolio-image" alt="musicplayer" />
+            <h2>Music Player</h2>
+            <img
+              src={musicplayer}
+              className="portfolio-image"
+              alt="musicplayer"
+            />
           </div>
 
           {/* ====================================================================================================== */}
-          
 
           <div className="portfolio-image-box" onClick={openProjectOutdoors}>
             <h2>Outdoors-A Travel Website</h2>
             <img src={travel1} className="portfolio-image" alt="travel1" />
           </div>
-
-          </div>          
+        </div>
       </div>
       <PopupboxContainer />
     </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" href="#">
-          <h2 className="logo">{`<Hello World />`}</h2>
+          <h2 className="logo">{`<Sidhant/>`}</h2>
         </Link>
         <button
           className="navbar-toggler"
